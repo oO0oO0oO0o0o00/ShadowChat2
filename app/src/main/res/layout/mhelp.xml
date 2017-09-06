@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="match_parent"
+		android:text="THE END IS NOT THE END IS NOT THE END IS NOT THE END IS NOT THE END IS NOT THE END IS NOT"
+		android:singleLine="true"
+		android:id="@+id/mhelpBanner0"
+		android:onClick="FAQ"/>
+
+	<ScrollView
+		android:layout_height="0dp"
+		android:layout_width="match_parent"
+		android:layout_weight="1.0">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="match_parent"
+			android:text="如何使用:\n0.创建规则\n规则指的是按照何种方式加密解密消息，以及如何鉴别是否解密成功。您至少需要为每条规则指定名字(无关紧要)，密码，前缀三个属性。密码用于加密解密消息，而前缀用于接收者判断是否成功解密。除此之外，加密方式目前只有AES一种，您可以自己修改代码增加不对称加密。后处理指的是，加密后的内容是不能正确显示的乱码，也可能包含控制字符，需要转换成常规的字母数字等内容。一般可以随意选择。考虑到腾讯可能会打击此插件，您可以选择具有混淆功能的后处理方案，将加密后的消息变成常用的汉字或者有意义的英文单词，避免腾讯探测出您在使用此插件。如果一定要探测，它只能使用语义分析，处于技术和经济上的考虑，腾讯不会这样做。\n1.添加方案\n对于每个方案，您需要指定名字、一条加密规则和若干解密规则。加密规则用于加密您发送的消息，解密规则用于智能解密不同用户的消息。所有规则都需要从您在上一步添加的规则里选择。注意，如果不把加密规则也添加到解密规则，您将无法查看自己发送的消息。\n2.启用\n首先确认您的xposed已正确安装，然后激活本插件，重启手机生效。如果正确设置，在QQ和微信中的输入框将显示为你帽子的颜色。\n3.使用\n进入微信或QQ后，将默认使用第一个方案，当前使用的方案会显示在聊天窗口的标题上，您可以点击以切换或关闭加密。\n\n快速设置\n最简单的方法就是只添加一条规则，填写名称、密码、前缀，然后点击两次确定以返回主界面，然后添加一个方案，输入名字，添加加密规则，添加解密规则，点击两次确定以返回主界面。\n\n注意\n0.只有其他用户也使用此插件，并且将您的加密规则添加为他的解密规则，才能正确接收您的消息。而xposed用户并不多，所以此插件通常只用于和少数好友聊天或组织内部的群聊。\n1.如果您直接通过QQ将密码和前缀告知他人，那么您使用此插件将只能绕过机器，而不能绕过人工的调查，即只起了规避敏感词的作用。如果需要，请通过Gmail、里层网路或现场交换密码。\n2.使用此插件不能带来多少安全，请自求多福。如果用于非法目的，请自行计算风险。\n对，我就不说那种“请勿用于非法目的”的鬼话，说了也没用，不是非法目的那还加个卵子的密啊。\n欢淫转载此插件及其源码，传播时请勿注明原始出处(原作者的github项目网址等)，如果修改者要求注明其信息，请尊重之。\n\n大数据时代，公民隐私被无限践踏，请不要沉默，除非你想失去更多！\n"
+			android:padding="25dp"/>
+
+	</ScrollView>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="match_parent"
+		android:text="ND IS NOT THE END IS NOT THE END IS NOT THE END IS NOT THE END IS NOT THE END IS NOT THE E"
+		android:singleLine="true"
+		android:id="@+id/mhelpBanner1"
+		android:onClick="FAQ"/>
+
+</LinearLayout>
+

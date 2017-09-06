@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">ShadowChat</string>
+	<string name="settings_main_intro">Encrypt texts you send, decrypt texts you receives, when you are using QQ or Wechat.</string>
+	<string name="settings_main_switch">ON/OFF</string>
+	<string name="settings_main_profiles">Manage profiles</string>
+	<string name="settings_main_rules">Manage en/decrypt rules</string>
+	<string name="settings_main_help">Help</string>
+	
+	<string name="settings_global_add">Add new</string>
+	<string name="settings_global_confirm">OK</string>
+	<string name="settings_global_cancel">Cancel</string>
+	
+	<string name="settings_profiles_title"></string>
+	
+	<string name="settings_profile_title"></string>
+	<string name="settings_profile_enc">Encrypting rule</string>
+	<string name="settings_profile_dec">Decrypting rules(On failure trys next one)</string>
+	<string name="settings_profile_encchange">Change...</string>
+	<string name="settings_profile_name">Name</string>
+	
+	<string name="settings_rules_title"></string>
+	
+	<string name="settings_rule_title"></string>
+	<string name="settings_rule_name">Name</string>
+	<string name="settings_rule_prefix">Prefix(Used to indicate whether decryption is successful.)</string>
+	<string name="settings_rule_sol">Encrypt by</string>
+	<string name="settings_rule_method">Method</string>
+	<string name="settings_rule_solcode">Code</string>
+	<string name="settings_rule_solkstore">Keystore</string>
+	<string name="settings_rule_postp">Post process</string>
+	<string name="settings_rule_code">Code</string>
+	<string name="settings_rule_kstore">NOT SUPPORTED</string>
+	
+	<string name="crypto_met_aes128unknown">AES-128-RBQ</string>
+	<string name="crypto_postp_hex">Hex</string>
+	<string name="crypto_postp_base64">Base64</string>
+	<string name="crypto_postp_han64">Chinese64</string>
+	<string name="crypto_postp">Post process</string>
+	<string name="crypto_method">Method</string>
+	<string name="crypto_prefix">Prefix</string>
+	<string name="crypto_getinfo">Prefix: %1$s, method: %2$s, post-process: %3$s"</string>
+</resources>

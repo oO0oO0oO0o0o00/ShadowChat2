@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:orientation="vertical"
+		android:layout_weight="1.0">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="@string/settings_rule_name"/>
+
+			<EditText
+				android:layout_height="wrap_content"
+				android:layout_width="0dp"
+				android:ems="10"
+				android:layout_weight="1.0"
+				android:id="@+id/mpolicyEtName"/>
+
+		</LinearLayout>
+
+		<View
+			android:background="?android:attr/dividerVertical"
+			android:layout_height="1dp"
+			android:layout_width="match_parent"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="@string/settings_rule_prefix"/>
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:ems="10"
+			android:id="@+id/mpolicyEtTxtpfx"/>
+
+		<View
+			android:background="?android:attr/dividerVertical"
+			android:layout_height="1dp"
+			android:layout_width="match_parent"/>
+
+		<RelativeLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="@string/settings_rule_sol"/>
+
+			<RadioGroup
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="horizontal"
+				android:layout_alignParentRight="true">
+
+				<RadioButton
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text="@string/settings_rule_solcode"
+					android:id="@+id/mpolicyRb0"/>
+
+				<RadioButton
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text="@string/settings_rule_solkstore"
+					android:id="@+id/mpolicyRb1"/>
+
+			</RadioGroup>
+
+		</RelativeLayout>
+
+		<View
+			android:background="?android:attr/dividerVertical"
+			android:layout_height="1dp"
+			android:layout_width="match_parent"/>
+
+		<RelativeLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:onClick="selectMethod"
+			android:layout_marginTop="15dp"
+			android:layout_marginBottom="15dp">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="@string/settings_rule_method"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_alignParentRight="true"
+				android:id="@+id/mpolicyTvMet"/>
+
+		</RelativeLayout>
+
+		<View
+			android:background="?android:attr/dividerVertical"
+			android:layout_height="1dp"
+			android:layout_width="match_parent"/>
+
+		<RelativeLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:onClick="selectPostp"
+			android:layout_marginTop="15dp"
+			android:layout_marginBottom="15dp">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="@string/settings_rule_postp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_alignParentRight="true"
+				android:id="@+id/mpolicyTvPostp"/>
+
+		</RelativeLayout>
+
+		<View
+			android:background="?android:attr/dividerVertical"
+			android:layout_height="1dp"
+			android:layout_width="match_parent"/>
+
+		<RelativeLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:id="@+id/mpolicyBoxMode0">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="@string/settings_rule_code"/>
+
+			<EditText
+				android:layout_height="wrap_content"
+				android:inputType="textPassword"
+				android:layout_width="wrap_content"
+				android:ems="10"
+				android:layout_alignParentRight="true"
+				android:id="@+id/mpolicyEtCode"/>
+
+		</RelativeLayout>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text=""
+			android:padding="16dp"
+			android:onClick="selectKeystore"
+			android:id="@+id/mpolicyBoxMode1"/>
+
+		<RelativeLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:id="@+id/mpolicyBoxMode1a">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/mpolicyTvFn"/>
+
+			<Button
+				style="?android:attr/buttonBarButtonStyle"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="更改"
+				android:layout_alignParentRight="true"/>
+
+		</RelativeLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal">
+
+		<Button
+			style="?android:attr/buttonBarButtonStyle"
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:text="取消"
+			android:layout_weight="0.5"
+			android:onClick="cancel"/>
+
+		<View
+			android:background="?android:attr/dividerHorizontal"
+			android:layout_height="match_parent"
+			android:layout_width="1dp"/>
+
+		<Button
+			style="?android:attr/buttonBarButtonStyle"
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:text="确定"
+			android:layout_weight="0.5"
+			android:onClick="confirm"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+

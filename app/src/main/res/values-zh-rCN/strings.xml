@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">ShadowChat</string>
+	<string name="settings_main_intro">自动加密您通过QQ和微信发送的文字消息，并且解密收到的消息，以保护聊天内容不被腾讯公司和任何其他机构或个人获取。其他用户需要安装此插件以解密您的消息。</string>
+	<string name="settings_main_switch">总开关(微信QQ异常时才用关)</string>
+	<string name="settings_main_profiles">方案编辑</string>
+	<string name="settings_main_rules">加密解密规则管理</string>
+	<string name="settings_main_help">食用方法</string>
+	
+	<string name="settings_global_add">添加</string>
+	<string name="settings_global_confirm">确定</string>
+	<string name="settings_global_cancel">取消</string>
+	
+	<string name="settings_profiles_title"></string>
+	
+	<string name="settings_profile_title"></string>
+	<string name="settings_profile_enc">加密策略</string>
+	<string name="settings_profile_dec">解密策略(由上自下应用)</string>
+	<string name="settings_profile_encchange">更改...</string>
+	<string name="settings_profile_name">名称</string>
+	
+	<string name="settings_rules_title"></string>
+	
+	<string name="settings_rule_title"></string>
+	<string name="settings_rule_name">名称</string>
+	<string name="settings_rule_prefix">明文前缀(用于判断解密是否成功，建议使用5或更多字符的随机组合</string>
+	<string name="settings_rule_sol">加密使用</string>
+	<string name="settings_rule_method">加密方式</string>
+	<string name="settings_rule_solcode">口令</string>
+	<string name="settings_rule_solkstore">密钥文件</string>
+	<string name="settings_rule_postp">后处理</string>
+	<string name="settings_rule_code">口令</string>
+	<string name="settings_rule_kstore">点击这里选择密钥文件(暂不支持)</string>
+	
+	<string name="crypto_met_aes128unknown">AES-128-RBQ</string>
+	<string name="crypto_postp_hex">十六进制</string>
+	<string name="crypto_postp_base64">Base64</string>
+	<string name="crypto_postp_han64">常用汉字64</string>
+	<string name="crypto_postp">后处理</string>
+	<string name="crypto_method">加密方式</string>
+	<string name="crypto_prefix">明文前缀</string>
+	<string name="crypto_getinfo">明文前缀: %1$s, 加密方式: %2$s, 后处理方式: %3$s"</string>
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:padding="25dp"
+		android:gravity="center_vertical">
+
+		<ImageView
+			android:layout_height="50dp"
+			android:layout_width="50dp"
+			android:src="@drawable/ic_launcher"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="@string/settings_main_intro"/>
+
+	</LinearLayout>
+
+	<View
+		android:background="?android:attr/dividerVertical"
+		android:layout_height="1dp"
+		android:layout_width="match_parent"/>
+
+	<Switch
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:onClick="switchWechatEncrypt"
+		android:text="@string/settings_main_switch"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:id="@+id/mainSwWechat"
+		android:padding="25dp"/>
+
+	<View
+		android:background="?android:attr/dividerVertical"
+		android:layout_height="1dp"
+		android:layout_width="match_parent"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:text="@string/settings_main_profiles"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:onClick="editProfiles"
+		android:padding="25dp"/>
+
+	<View
+		android:background="?android:attr/dividerVertical"
+		android:layout_height="1dp"
+		android:layout_width="match_parent"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="match_parent"
+		android:text="@string/settings_main_rules"
+		android:onClick="editPolicies"
+		android:padding="25dp"/>
+
+	<View
+		android:background="?android:attr/dividerVertical"
+		android:layout_height="1dp"
+		android:layout_width="match_parent"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="match_parent"
+		android:text="@string/settings_main_help"
+		android:padding="25dp"
+		android:onClick="showHelp"/>
+
+</LinearLayout>
+

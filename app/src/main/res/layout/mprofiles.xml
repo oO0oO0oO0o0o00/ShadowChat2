@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent">
+
+	<ListView
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:id="@+id/profilesListView1"/>
+
+	<Button
+		style="?android:attr/buttonBarButtonStyle"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:text="@string/settings_global_add"
+		android:layout_below="@id/profilesListView1"
+		android:onClick="add"/>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:layout_alignParentBottom="true"
+		android:id="@+id/profilesLinearLayout1">
+
+		<Button
+			style="?android:attr/buttonBarButtonStyle"
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:text="@string/settings_global_cancel"
+			android:layout_weight="0.5"
+			android:onClick="cancel"/>
+
+		<View
+			android:background="?android:attr/dividerHorizontal"
+			android:layout_height="match_parent"
+			android:layout_width="1dp"/>
+
+		<Button
+			style="?android:attr/buttonBarButtonStyle"
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:text="@string/settings_global_confirm"
+			android:layout_weight="0.5"
+			android:onClick="confirm"/>
+
+	</LinearLayout>
+
+	<View
+		android:background="?android:attr/dividerVertical"
+		android:layout_height="1dp"
+		android:layout_width="match_parent"
+		android:layout_above="@id/profilesLinearLayout1"/>
+
+</RelativeLayout>
+

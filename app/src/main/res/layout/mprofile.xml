@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="wrap_content"
+			android:text="@string/settings_profile_name"/>
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:ems="10"
+			android:layout_weight="1.0"
+			android:id="@+id/mprofileEtName"/>
+
+	</LinearLayout>
+
+	<RelativeLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="wrap_content"
+			android:text="@string/settings_profile_enc"/>
+
+		<Button
+			style="?android:attr/buttonBarButtonStyle"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="@string/settings_profile_encchange"
+			android:layout_alignParentRight="true"
+			android:onClick="selectEncRule"/>
+
+	</RelativeLayout>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="match_parent"
+		android:id="@+id/mprofileTvEnctit"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="match_parent"
+		android:id="@+id/mprofileTvEncinf"/>
+
+	<View
+		android:background="?android:attr/dividerVertical"
+		android:layout_height="1dp"
+		android:layout_width="match_parent"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="match_parent"
+		android:text="@string/settings_profile_dec"/>
+
+	<ListView
+		android:layout_height="0dp"
+		android:layout_width="match_parent"
+		android:id="@+id/mprofileDecplcs"
+		android:layout_weight="1.0"/>
+
+	<Button
+		style="?android:attr/buttonBarButtonStyle"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:text="@string/settings_global_add"
+		android:onClick="addDecRule"/>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal">
+
+		<Button
+			style="?android:attr/buttonBarButtonStyle"
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:text="@string/settings_global_cancel"
+			android:layout_weight="0.5"
+			android:onClick="cancel"/>
+
+		<View
+			android:background="?android:attr/dividerHorizontal"
+			android:layout_height="match_parent"
+			android:layout_width="1dp"/>
+
+		<Button
+			style="?android:attr/buttonBarButtonStyle"
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:text="@string/settings_global_confirm"
+			android:layout_weight="0.5"
+			android:onClick="confirm"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+

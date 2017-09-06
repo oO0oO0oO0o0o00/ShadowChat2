@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:gravity="right|center">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="0dp"
+		android:orientation="vertical"
+		android:layout_weight="1.0">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="wrap_content"
+			android:id="@+id/eprofileruleTvName"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_width="wrap_content"
+			android:id="@+id/eprofileruleTvInfo"/>
+
+	</LinearLayout>
+
+	<ImageButton
+		style="?android:attr/buttonBarButtonStyle"
+		android:layout_height="40dp"
+		android:layout_width="40dp"
+		android:src="@drawable/ic_up"
+		android:scaleType="centerCrop"
+		android:id="@+id/eprofileruleIbUp"/>
+
+	<ImageButton
+		style="?android:attr/buttonBarButtonStyle"
+		android:layout_height="40dp"
+		android:layout_width="40dp"
+		android:src="@drawable/ic_down"
+		android:scaleType="centerCrop"
+		android:id="@+id/eprofileruleIbDn"/>
+
+	<ImageButton
+		style="?android:attr/buttonBarButtonStyle"
+		android:layout_height="40dp"
+		android:layout_width="40dp"
+		android:src="@drawable/ic_delete"
+		android:scaleType="centerCrop"
+		android:id="@+id/eprofileruleIbDl"/>
+
+	<ImageButton
+		style="?android:attr/buttonBarButtonStyle"
+		android:layout_height="40dp"
+		android:layout_width="40dp"
+		android:src="@drawable/ic_add"
+		android:scaleType="centerCrop"
+		android:id="@+id/eprofileruleIbAdd"/>
+
+</LinearLayout>
+
